@@ -1,0 +1,123 @@
+.page-content{
+    padding-top:30px;
+    overflow: hidden;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    border: 3px solid teal;
+    border-radius: 5px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top:3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.card-header{
+    padding:1%;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 2px solid rgb(192, 192, 192);
+    text-align: center;
+}
+.card-body{padding:5%;
+    text-align: center;
+        }
+        /* On mouse-over, add a deeper shadow */
+        
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.nav{
+    background-color: teal;
+    list-style-type: none;
+    position: fixed; 
+    top:0; 
+    left: 0;
+    width:100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.nav li{
+    display: inline-block;
+    font-size: 20px;
+    padding: 15px 20px;
+}
+.nav li a{
+    text-decoration: none;
+    color:white
+}
+
+
+.container {
+        /* Center child div horizontally*/
+        display: flex;
+        justify-content: center;
+}
+.container {
+    /* Center child div vertically*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+p{
+    font-style: oblique;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+    font-weight:700;
+    line-height: 32px;
+    letter-spacing: 1px;
+}
+h6 { font-size: 12pt; }
+
+
+
+.img-right {
+    display: block;
+    margin: 0 auto;
+}
+
+
+    
+h2 {
+    background-color: black;
+    color: white;
+}
+article.main p.box {
+    border: 1px solid #ccc;
+}
+
+.box {
+    border: 1px solid #ccc;
+}
+
+.box {
+    border: 5px solid teal;
+    height: 150px;
+    width: 200px;
+}
+
+.box {
+    background-color: #567895;
+    border: 5px solid teal;
+    width: 300px;
+    margin: 10%;
+    padding: 10%;
+}
+
+footer{
+    text-align: center;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
