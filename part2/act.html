@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="normalize.css" media="screen">
-    <link rel="stylesheet" href="resets.css" media="screen">
-    <link rel="stylesheet" href="styles.css" media="screen">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-    <style>
-    body {
-        font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
-    }
-    .test {color: green;}
-    p {color: red;}
-    </style>
-    <title>HTML CHALLENGE WITH CSS</title>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+    <title>Personal Online CV</title>
 </head>
 <body>
     <header>
-        <p>I am header with an unordered list of hyperlinks</p>
-        <ul class="nav">
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </header>
+        <h1>Chamberlain Delez</h1>
+        <p>Web Developer | Designer | Freelancer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
 
-        <img src="tree.jpg" class="img-right">
-        <p class="card-header">I am an image and I'm all by myself</p>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     
-        <div class="page-content">
-        <div class="card" id="about">
-            <p class="card-header">About</p>
-            <p class="card-body">Hello! Tell us about yourself.</p>
-        </div>
-        <div class="card" id="education">
-            <p class="card-header">Education</p>
-            <p class="card-body">Tell us about your education</p>
-        </div>
-        <div class="card" id="skills">
-            <p class="card-header">Skills</p>
-            <p class="card-body">Tell us about your IT Skills></p>
-        </div>
-        <div class="card" id="portfolio">
-            <p class="card-header">Portfolio</p>
-            <p class="card-body">Share your previous IT projects</p>
-        </div>
-        </div>
+    <section class="profile-picture">
+        <img src="prof.png" alt="Profile Picture">
+    </section>
+    
+    <div class="page-content">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a fresh graduate at USTP.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p>Bachelor's Degree in Information Technology - University of Science and Technology of Southern Philippines</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Node.js</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Check out my projects:</p>
+            <ul>
+                <li><a href="project1.html">Project 1</a></li>
+                <li><a href="project2.html">Project 2</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: delez.chamberlain@gmail.com</p>
+            <p>Phone: 63+9352750166</p>
+        </section>
+    </div>
     
     <footer>
-        <p>I am a footer the last section of this page</p>
+        <p>&copy; 2025 Chamberlain Delez. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
