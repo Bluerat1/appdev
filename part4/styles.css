@@ -122,7 +122,7 @@ body, html {
     padding: 0;
 }
 
-.course-list:hover {
+.course-list {
     white-space: pre-wrap;
     background-color: #ffffff;
     padding: 20px;
