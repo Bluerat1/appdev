@@ -3,10 +3,60 @@
         {
             "year_level": "1st",
             "sem": "1st",
-            "code": "IT112",
-            "description": "Computer Programming 1",
+            "code": "NSTP101a",
+            "description": "Reserve Officers' Training Corps 1",
+            "credit": "1.25"
+        },
+        {
+            "year_level": "1st",
+            "sem": "1st",
+            "code": "IT111",
+            "description": "Introduction to Computing",
+            "credit": "2.00"
+        },
+        {
+            "year_level": "1st",
+            "sem": "1st",
+            "code": "IT113",
+            "description": "Computer Programing 1",
             "credit": "3.0"
         },
+        {
+            "year_level": "1st",
+            "sem": "2nd",
+            "code": "IT113",
+            "description": "Purposive Communication",
+            "credit": "3.0"
+        },
+        {
+            "year_level": "1st",
+            "sem": "1st",
+            "code": "IT113",
+            "description": "Readings in Philippine History",
+            "credit": "3.0"
+        },
+        {
+            "year_level": "1st",
+            "sem": "1st",
+            "code": "IT113",
+            "description": "The Contemporary World",
+            "credit": "3.0"
+        },
+        {
+            "year_level": "1st",
+            "sem": "1st",
+            "code": "IT113",
+            "description": "Computer Programming 2",
+            "credit": "3.0"
+        },
+        {
+            "year_level": "1st",
+            "sem": "1st",
+            "code": "IT113",
+            "description": "Computer Programming 2",
+            "credit": "3.0"
+        },
+
         {
             "year_level": "1st",
             "sem": "2nd",
@@ -20,7 +70,42 @@
             "code": "IT113",
             "description": "Computer Programming 2",
             "credit": "3.0"
-        },
+        },        
+        {
+            "year_level": "1st",
+            "sem": "2nd",
+            "code": "IT113",
+            "description": "Computer Programming 2",
+            "credit": "3.0"
+        },        
+        {
+            "year_level": "1st",
+            "sem": "2nd",
+            "code": "IT113",
+            "description": "Computer Programming 2",
+            "credit": "3.0"
+        },        
+        {
+            "year_level": "1st",
+            "sem": "2nd",
+            "code": "IT113",
+            "description": "Computer Programming 2",
+            "credit": "3.0"
+        },        
+        {
+            "year_level": "1st",
+            "sem": "2nd",
+            "code": "IT113",
+            "description": "Computer Programming 2",
+            "credit": "3.0"
+        },        
+        {
+            "year_level": "1st",
+            "sem": "2nd",
+            "code": "IT113",
+            "description": "Computer Programming 2",
+            "credit": "3.0"
+        },        
         {
             "year_level": "1st",
             "sem": "2nd",
@@ -28,266 +113,171 @@
             "description": "Computer Programming 2",
             "credit": "3.0"
         },
+
+
+
+
+
+
+
+
         {
-            "year_level": "1st",
+            "year_level": "2nd",
+            "sem": "1st",
+            "code": "IT113",
+            "description": "Computer Programming 2",
+            "credit": "3.0"
+        },
+
+        {
+            "year_level": "2nd",
+            "sem": "1st",
+            "code": "IT113",
+            "description": "Computer Programming 2",
+            "credit": "3.0"
+        },
+        {
+            "year_level": "2nd",
+            "sem": "1st",
+            "code": "IT113",
+            "description": "Computer Programming 2",
+            "credit": "3.0"
+        },
+        {
+            "year_level": "2nd",
+            "sem": "1st",
+            "code": "IT113",
+            "description": "Computer Programming 2",
+            "credit": "3.0"
+        },
+        {
+            "year_level": "2nd",
+            "sem": "1st",
+            "code": "IT113",
+            "description": "Computer Programming 2",
+            "credit": "3.0"
+        },
+        {
+            "year_level": "2nd",
+            "sem": "1st",
+            "code": "IT113",
+            "description": "Computer Programming 2",
+            "credit": "3.0"
+        },
+        {
+            "year_level": "2nd",
+            "sem": "1st",
+            "code": "IT113",
+            "description": "Computer Programming 2",
+            "credit": "3.0"
+        },
+        {
+            "year_level": "2nd",
+            "sem": "1st",
+            "code": "IT113",
+            "description": "Computer Programming 2",
+            "credit": "3.0"
+        },
+
+        {
+            "year_level": "2nd",
             "sem": "2nd",
             "code": "IT113",
             "description": "Computer Programming 2",
             "credit": "3.0"
         },
         {
-            "year_level": "1st",
+            "year_level": "2nd",
+            "sem": "2nd",
+            "code": "IT113",
+            "description": "Computer Programming 2",
+            "credit": "3.0"
+        },        
+        {
+            "year_level": "2nd",
             "sem": "2nd",
             "code": "IT113",
             "description": "Computer Programming 2",
             "credit": "3.0"
         },
         {
-            "year_level": "1st",
+            "year_level": "2nd",
+            "sem": "2nd",
+            "code": "IT113",
+            "description": "Computer Programming 2",
+            "credit": "3.0"
+        },        
+        {
+            "year_level": "2nd",
+            "sem": "2nd",
+            "code": "IT113",
+            "description": "Computer Programming 2",
+            "credit": "3.0"
+        },        
+        {
+            "year_level": "2nd",
+            "sem": "2nd",
+            "code": "IT113",
+            "description": "Computer Programming 2",
+            "credit": "3.0"
+        },        
+        {
+            "year_level": "2nd",
             "sem": "2nd",
             "code": "IT113",
             "description": "Computer Programming 2",
             "credit": "3.0"
         },
+
+
+
+
+
+
         {
-            "year_level": "1st",
-            "sem": "2nd",
+            "year_level": "3rd",
+            "sem": "1st",
+            "code": "IT113",
+            "description": "Computer Programming 2",
+            "credit": "3.0"
+        },
+
+        
+        {
+            "year_level": "3rd",
+            "sem": "1st",
             "code": "IT113",
             "description": "Computer Programming 2",
             "credit": "3.0"
         },
         {
-            "year_level": "1st",
-            "sem": "2nd",
+            "year_level": "3rd",
+            "sem": "1st",
             "code": "IT113",
             "description": "Computer Programming 2",
             "credit": "3.0"
         },
         {
-            "year_level": "1st",
-            "sem": "2nd",
+            "year_level": "3rd",
+            "sem": "1st",
             "code": "IT113",
             "description": "Computer Programming 2",
             "credit": "3.0"
         },
         {
-            "year_level": "1st",
-            "sem": "2nd",
+            "year_level": "3rd",
+            "sem": "1st",
             "code": "IT113",
             "description": "Computer Programming 2",
             "credit": "3.0"
         },
         {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
-            "code": "IT113",
-            "description": "Computer Programming 2",
-            "credit": "3.0"
-        },
-        {
-            "year_level": "1st",
-            "sem": "2nd",
+            "year_level": "3rd",
+            "sem": "1st",
             "code": "IT113",
             "description": "Computer Programming 2",
             "credit": "3.0"
         }
-
 
     ]
 }
