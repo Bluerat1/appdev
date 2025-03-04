@@ -122,6 +122,6 @@ body, html {
     padding: 0;
 }
 
-course-list {
+.course-list {
     white-space: pre-wrap;
   }
