@@ -124,4 +124,9 @@ body, html {
 
 .course-list {
     white-space: pre-wrap;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    padding: 15px 20px;
+
   }
