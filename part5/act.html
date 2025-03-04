@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="normalize.css" media="screen">
+    <link rel="stylesheet" href="resets.css" media="screen">
+    <link rel="stylesheet" href="styles.css" media="screen">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+    <style>
+        body {
+            font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+        }
+        .test {
+            color: green;
+        }
+        p {
+            color: red;
+        }
+        #search-bar {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+
+    <title>Webpage Structure</title>
+
+    <script>
+        const jsonURL = "https://Bluerat1.github.io/appdev/part4/courses.json";
+        let coursesData = []; // Store data globally for filtering
+
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch(jsonURL)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.courses && Array.isArray(data.courses)) {
+                        coursesData = data.courses; 
+                        displayCourses(coursesData); 
+                    } else {
+                        console.error("Expected 'courses' array but got:", data);
+                    }
+                })
+                .catch(error => console.error("Error fetching JSON:", error));
+
+            const searchBar = document.getElementById("search-bar");
+            searchBar.addEventListener("input", handleSearch);
+        });
+
+        function displayCourses(courses) {
+            const courseList = document.getElementById("course-list");
+            courseList.innerHTML = ''; // Clear old list
+            courses.forEach(course => {
+                let listItem = document.createElement("li");
+                listItem.innerHTML = `Year Level: ${course.year_level}<br>
+                                      Semester: ${course.sem}<br>
+                                      Course Code: ${course.code}<br>
+                                      Course Descriptive: ${course.description}<br>
+                                      Credit: ${course.credit}`;
+                courseList.appendChild(listItem);
+            });
+        }
+
+        function handleSearch() {
+            const query = document.getElementById("search-bar").value.toLowerCase();
+            const filteredCourses = coursesData.filter(course =>
+                course.code.toLowerCase().includes(query) ||
+                course.description.toLowerCase().includes(query) ||
+                course.year_level.toString().includes(query)
+            );
+            displayCourses(filteredCourses);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <p>I am header with an unordered list of hyperlinks</p>
+        <ul class="nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <img src="tree.jpg" class="img-right">
+    <p class="card-header">I am an image and I'm all by myself</p>
+
+    <div class="page-content">
+        <div class="card" id="about">
+            <p class="card-header">About</p>
+            <p id="para1" class="card-body">Hello! Tell us about yourself.</p>
+        </div>
+        <div class="card" id="education">
+            <p class="card-header">Education</p>
+            <p id="para2" class="card-body">Tell us about your education</p>
+        </div>
+        <div class="card" id="skills">
+            <p class="card-header">Skills</p>
+            <p id="para3" class="card-body">Tell us about your IT Skills></p>
+        </div>
+        <div class="card" id="portfolio">
+            <p class="card-header">Portfolio</p>
+            <p id="para4" class="card-body">Share your previous IT projects</p>
+        </div>
+
+        <h2>Student List</h2>
+        <input type="text" id="search-bar" placeholder="Search courses...">
+        <ul id="course-list" class="course-list"></ul>
+    </div>
+
+    <footer>
+        <p>I am a footer the last section of this page</p>
+    </footer>
+</body>
+</html>
