@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="normalize.css" media="screen">
+    <link rel="stylesheet" href="resets.css" media="screen">
     <link rel="stylesheet" href="styles.css" media="screen">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
@@ -16,7 +18,7 @@
 
 	<script>
         alert("Hello World! I am an alert box.");
-        const jsonURL = "https://Bluerat1.github.io/appdev/part2/students.json";
+        const jsonURL = "https://github.com/Bluerat1/appdev/blob/main/part2/students.json";
     
         fetch(jsonURL)
         .then(response => response.json())
@@ -27,6 +29,7 @@
                 data.students.forEach(student => {
                     let listItem = document.createElement("li");
                     listItem.textContent = `${student.name} - ${student.age} (Course: ${student.course})`;
+                    studentList.appendChild(listItem);
                 });
             } else {
                 console.error("Expected 'students' array but got:", data);
@@ -68,8 +71,9 @@
                 <p class="card-header">Portfolio</p>
                 <p id="para4" class="card-body">Share your previous IT projects</p>
             </div>
-        <h2>Student List</h2>
-        <ul id="student-list" class="card-body"></p>
+
+            <h2>Student List</h2>
+            <ul id="student-list" class="card-body"></p>
         </div>
     
     <footer>
