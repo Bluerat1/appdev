@@ -122,6 +122,6 @@ body, html {
     padding: 0;
 }
 
-#course-list ul {
-    white-space: pre-line;
-}
+ul {
+    white-space: pre-wrap;
+  }
