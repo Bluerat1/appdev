@@ -122,6 +122,6 @@ body, html {
     padding: 0;
 }
 
-ul {
+.ul p {
     white-space: pre-wrap;
   }
