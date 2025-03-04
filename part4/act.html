@@ -18,21 +18,21 @@
 
 	<script>
         alert("Hello World! I am an alert box.");
-        const jsonURL = "https://Bluerat1.github.io/appdev/part3/students.json";
+        const jsonURL = "https://Bluerat1.github.io/appdev/part4/courses.json";
     
         fetch(jsonURL)
         .then(response => response.json())
         .then(data => {
-            let studentList = document.getElementById("student-list");
+            let courseList = document.getElementById("courses-list");
 
-            if (data.students && Array.isArray(data.students)) {
-                data.students.forEach(student => {
+            if (data.courses && Array.isArray(data.courses)) {
+                data.courses.forEach(course => {
                     let listItem = document.createElement("li");
-                    listItem.textContent = `${student.name} - ${student.age} (Course: ${student.course})`;
-                    studentList.appendChild(listItem);
+                    listItem.textContent = `Year Level:${course.year_level}<br>Semester: ${course.sem}<br>Course Code: ${course.code}<br>Course Descriptive: ${course.description}<br>Credit: ${course.credit}`;
+                    courseList.appendChild(listItem);
                 });
             } else {
-                console.error("Expected 'students' array but got:", data);
+                console.error("Expected 'course' array but got:", data);
             }
         })
         .catch(error => console.error("Error fetching JSON:", error));
