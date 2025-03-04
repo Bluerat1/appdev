@@ -121,3 +121,7 @@ body, html {
     margin: 0;
     padding: 0;
 }
+
+#course-list li {
+    white-space: pre-line;
+}
