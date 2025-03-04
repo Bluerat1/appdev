@@ -23,7 +23,7 @@
         fetch(jsonURL)
         .then(response => response.json())
         .then(data => {
-            let courseList = document.getElementById("courses-list");
+            let courseList = document.getElementById("course-list");
 
             if (data.courses && Array.isArray(data.courses)) {
                 data.courses.forEach(course => {
@@ -73,7 +73,7 @@
             </div>
 
             <h2>Student List</h2>
-            <ul id="student-list" class="card-body"></p>
+            <ul id="course-list" class="card-body"></p>
         </div>
     
     <footer>
