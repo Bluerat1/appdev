@@ -28,13 +28,7 @@
             if (data.courses && Array.isArray(data.courses)) {
                 data.courses.forEach(course => {
                     let listItem = document.createElement("li");
-                    listItem.textContent = `
-                    Year Level:${course.year_level}
-                    Semester: ${course.sem}
-                    Course Code: ${course.code}
-                    Course Descriptive: ${course.description}
-                    Credit: ${course.credit}
-                    `;
+                    listItem.innerHTML = `Year Level:${course.year_level}\nSemester: ${course.sem}\nCourse Code: ${course.code}\nCourse Descriptive: ${course.description}\nCredit: ${course.credit}`;
                     courseList.appendChild(listItem);
                 });
             } else {
