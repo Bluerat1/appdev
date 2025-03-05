@@ -16,20 +16,19 @@
         }
         #search-bar {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
+            padding: 12px;
             font-size: 16px;
-            border: 1px solid #ccc;
+            border: 2px solid teal;
             border-radius: 5px;
+            margin-bottom: 15px;
         }
     </style>
 
-    <title>Webpage Structure</title>
+    <title></title>
 
     <script>
-        alert("Hello World! I am an alert box.");
         const jsonURL = "https://Bluerat1.github.io/appdev/part4/courses.json";
-        let coursesData = []; // Store data globally for filtering
+        let coursesData = [];
 
         document.addEventListener("DOMContentLoaded", () => {
             fetch(jsonURL)
@@ -50,14 +49,14 @@
 
         function displayCourses(courses) {
             const courseList = document.getElementById("course-list");
-            courseList.innerHTML = ''; // Clear old list
+            courseList.innerHTML = ''; 
             courses.forEach(course => {
-                let listItem = document.createElement("li");
-                listItem.innerHTML = `Year Level: ${course.year_level}<br>
-                                      Semester: ${course.sem}<br>
-                                      Course Code: ${course.code}<br>
-                                      Course Descriptive: ${course.description}<br>
-                                      Credit: ${course.credit}`;
+                let listItem = document.createElement("div");
+                listItem.classList.add("course-card");
+                listItem.innerHTML = `<p><strong>${course.code}</strong></p>
+                                      <p>${course.description}</p>
+                                      <p>Year Level: ${course.year_level} | Semester: ${course.sem}</p>
+                                      <p>Credits: ${course.credit}</p>`;
                 courseList.appendChild(listItem);
             });
         }
@@ -89,30 +88,33 @@
     <p class="card-header">I am an image and I'm all by myself</p>
 
     <div class="page-content">
-        <div class="card" id="about">
+        <section class="card" id="about">
             <p class="card-header">About</p>
-            <p id="para1" class="card-body">Hello! Tell us about yourself.</p>
-        </div>
-        <div class="card" id="education">
-            <p class="card-header">Education</p>
-            <p id="para2" class="card-body">Tell us about your education</p>
-        </div>
-        <div class="card" id="skills">
-            <p class="card-header">Skills</p>
-            <p id="para3" class="card-body">Tell us about your IT Skills></p>
-        </div>
-        <div class="card" id="portfolio">
-            <p class="card-header">Portfolio</p>
-            <p id="para4" class="card-body">Share your previous IT projects</p>
-        </div>
+            <p class="card-body">Hello! Tell us about yourself.</p>
+        </section>
 
-        <h2>Student List</h2>
-        <input type="text" id="search-bar" placeholder="Search courses...">
-        <ul id="course-list" class="course-list"></ul>
+        <section class="card" id="education">
+            <p class="card-header">Education</p>
+            <p class="card-body">Tell us about your education</p>
+        </section>
+
+        <section class="card" id="skills">
+            <p class="card-header">Skills</p>
+            <p class="card-body">Tell us about your IT Skills</p>
+        </section>
+
+        <section class="card" id="portfolio">
+            <p class="card-header">Portfolio</p>
+            <p class="card-body">Share your previous IT projects</p>
+
+            <h2>Courses Taken</h2>
+            <input type="text" id="search-bar" placeholder="Search courses...">
+            <div id="course-list" class="course-list"></div>
+        </section>
     </div>
 
     <footer>
-        <p>I am a footer the last section of this page</p>
+        <p>I am a footer, the last section of this page</p>
     </footer>
 </body>
 </html>
