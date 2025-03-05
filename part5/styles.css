@@ -88,15 +88,6 @@ body, html {
     padding: 0;
 }
 
-#search-bar {
-    width: 80%;
-    padding: 12px;
-    font-size: 16px;
-    border: 2px solid teal;
-    border-radius: 5px;
-    margin: 15px auto;
-    display: block;
-}
 
 #portfolio h2 {
     text-align: center;
@@ -106,4 +97,38 @@ body, html {
     margin: 20px auto;
     width: fit-content;
 }
+
+#courses-taken {
+   margin-top: 40px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid teal;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+#courses-taken h2 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: fit-content;
+    margin: 0 auto 20px auto;
+}
+
+
+#search-bar {
+    width: 80%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid teal;
+    border-radius: 5px;
+    margin: 0 auto 20px auto;
+    display: block;
+}
+
 
