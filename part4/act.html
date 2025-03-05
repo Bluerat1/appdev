@@ -2,42 +2,53 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles.css" media="screen">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
     <style>
         body {
             font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
         }
-        .test {color: green;}
-        p {color: red;}
+        .test {
+            color: green;
+        }
+        p {
+            color: red;
+        }
     </style>
-    <title>HTML CHALLENGE WITH CSS</title>  
 
-	<script>
-        alert("Hello World! I am an alert box.");
+    <title>Webpage Structure</title>
+
+    <script>
         const jsonURL = "https://Bluerat1.github.io/appdev/part4/courses.json";
-    
-        fetch(jsonURL)
-        .then(response => response.json())
-        .then(data => {
-            let courseList = document.getElementById("course-list");
+        let coursesData = [];
 
-            if (data.courses && Array.isArray(data.courses)) {
-                data.courses.forEach(course => {
-                    let listItem = document.createElement("li");
-                    listItem.innerHTML = `Year Level:${course.year_level}
-                    \nSemester: ${course.sem}
-                    \nCourse Code: ${course.code}
-                    \nCourse Descriptive: ${course.description}
-                    \nCredit: ${course.credit}`;
-                    courseList.appendChild(listItem);
-                });
-            } else {
-                console.error("Expected 'course' array but got:", data);
-            }
-        })
-        .catch(error => console.error("Error fetching JSON:", error));
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch(jsonURL)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.courses && Array.isArray(data.courses)) {
+                        coursesData = data.courses; 
+                        displayCourses(coursesData); 
+                    } else {
+                        console.error("Expected 'courses' array but got:", data);
+                    }
+                })
+                .catch(error => console.error("Error fetching JSON:", error));
+
+        function displayCourses(courses) {
+            const courseList = document.getElementById("course-list");
+            courseList.innerHTML = ''; 
+            courses.forEach(course => {
+                let listItem = document.createElement("div");
+                listItem.classList.add("course-card");
+                listItem.innerHTML = `<p><strong>${course.code}</strong></p>
+                                      <p>${course.description}</p>
+                                      <p>Year Level: ${course.year_level} | Semester: ${course.sem}</p>
+                                      <p>Credits: ${course.credit}</p>`;
+                courseList.appendChild(listItem);
+            });
+        }
     </script>
-
 </head>
 <body>
     <header>
@@ -51,34 +62,36 @@
         </ul>
     </header>
 
-        <img src="tree.jpg" class="img-right">
-        <p class="card-header">I am an image and I'm all by myself</p>
-    
-        <div class="page-content">
-            <div class="card" id="about">
-                <p class="card-header">About</p>
-                <p id="para1" class="card-body">Hello! Tell us about yourself.</p>
-            </div>
-            <div class="card" id="education">
-                <p class="card-header">Education</p>
-                <p id="para2" class="card-body">Tell us about your education</p>
-            </div>
-            <div class="card" id="skills">
-                <p class="card-header">Skills</p>
-                <p id="para3" class="card-body">Tell us about your IT Skills></p>
-            </div>
-            <div class="card" id="portfolio">
-                <p class="card-header">Portfolio</p>
-                <p id="para4" class="card-body">Share your previous IT projects</p>
-            </div>
-            <div class="card" id="course-list">
-                <h2>Student List</h2>
-                <ul id="course-list" class="course-list"></ul>
-            </div>
-        </div>
-    
+    <img src="tree.jpg" class="img-right">
+    <p class="card-header">I am an image and I'm all by myself</p>
+
+    <div class="page-content">
+        <section class="card" id="about">
+            <p class="card-header">About</p>
+            <p class="card-body">Hello! Tell us about yourself.</p>
+        </section>
+
+        <section class="card" id="education">
+            <p class="card-header">Education</p>
+            <p class="card-body">Tell us about your education</p>
+        </section>
+
+        <section class="card" id="skills">
+            <p class="card-header">Skills</p>
+            <p class="card-body">Tell us about your IT Skills</p>
+        </section>
+
+        <section class="card" id="portfolio">
+            <p class="card-header">Portfolio</p>
+            <p class="card-body">Share your previous IT projects</p>
+
+            <h2>Courses Taken</h2>
+            <div id="course-list" class="course-list"></div>
+        </section>
+    </div>
+
     <footer>
-        <p>I am a footer the last section of this page</p>
+        <p>I am a footer, the last section of this page</p>
     </footer>
 </body>
 </html>
